@@ -29,7 +29,7 @@ export default function App(){
   }, []);
 
   return (
-    <Router>
+    <Router basename="/aep-training">
       <Header user={user} setUser={setUser} />
       <Routes>
         <Route path='/' element={<Home />} />
