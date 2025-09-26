@@ -7,10 +7,10 @@ import React from 'react';
 export default function ResponsiveImage({ srcBase, alt = '', className = '' , sizes='(max-width: 768px) 100vw, 33vw'}) {
   return (
     <picture>
-      <source srcSet={`${srcBase}.avif`} type="image/avif" />
-      <source srcSet={`${srcBase}.webp`} type="image/webp" />
-      <source srcSet={`${srcBase}.png`} type="image/png" />
-      <img src={`${srcBase}.jpg`} alt={alt} className={className} sizes={sizes} style={{width:'100%',height:'250px'}} />
+      <source srcSet={`${process.env.PUBLIC_URL}${srcBase}.avif`} type="image/avif" />
+      <source srcSet={`${process.env.PUBLIC_URL}${srcBase}.webp`} type="image/webp" />
+      <source srcSet={`${process.env.PUBLIC_URL}${srcBase}.png`} type="image/png" />
+      <img src={`${process.env.PUBLIC_URL}${srcBase}.jpg`} alt={alt} className={className} sizes={sizes} style={{width:'100%',height:'250px'}} />
     </picture>
   );
 }

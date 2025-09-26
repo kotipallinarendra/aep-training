@@ -14,7 +14,7 @@ import LoginPage from './pages/Login';
 import Signup from './pages/Signup';
 import { PRODUCTS } from './data/products';
 import { parse } from 'postcss';
-import CartProvider from "./context/CartContext";
+import { CartProvider } from "./context/CartContext";
 
 export default function App(){
   const [cartItems, setCartItems] = useState(()=>JSON.parse(localStorage.getItem('demoCart')||'[]'));

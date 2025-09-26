@@ -8,6 +8,8 @@
     "start": "react-scripts start",
     "dev": "vite",
     "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "lint": "eslint .",
     "preview": "vite preview",
     "gen-images": "node scripts/generate-images.cjs",
@@ -27,6 +29,8 @@
     ]
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@tailwindcss/vite": "^4.1.13",
     "node-fetch": "^2.7.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
