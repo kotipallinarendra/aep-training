@@ -1,23 +1,37 @@
 {
-  "name": "my-aep-shop",
+  "name": "aep-training",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://kotipallinarendra.github.io/aep-training",
   "scripts": {
+    "start": "react-scripts start",
     "dev": "vite",
-    "build": "vite build",
+    "build": "react-scripts build",
     "lint": "eslint .",
     "preview": "vite preview",
     "gen-images": "node scripts/generate-images.cjs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "node-fetch": "^2.7.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.2",
+    "react-scripts": "^5.0.1",
     "sharp": "^0.34.4"
   },
   "devDependencies": {
