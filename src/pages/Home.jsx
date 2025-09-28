@@ -25,7 +25,7 @@ export default function Home() {
             <Link key={cat.id} to={`/category/${cat.id}`} className="block border rounded-lg overflow-hidden hover:shadow-lg">
               <div className="w-full h-40">
                 {/* Placeholder image for category */}
-                <ResponsiveImage srcBase={`/assets/${cat.id}-1`} alt={cat.title} />
+                <ResponsiveImage srcBase={`/aep-training/assets/${cat.id}-1`} alt={cat.title} />
               </div>
               <div className="p-4 text-center text-lg font-bold bg-black">{cat.title}</div>
             </Link>
