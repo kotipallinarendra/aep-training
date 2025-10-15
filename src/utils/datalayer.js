@@ -1,5 +1,5 @@
 export const pushDataLayer = (payload) => {
-    window.dataLayer = window.dataLayer || [];
+    window.adobeDataLayer = window.adobeDataLayer || [];
 
     // Get user from sessionStorage
     const user = sessionStorage.getItem("user");
@@ -11,5 +11,5 @@ export const pushDataLayer = (payload) => {
         user: parsedUser || undefined,
     };
     
-    window.dataLayer.push(dataWithUser);
+    window.adobeDataLayer.push(dataWithUser);
 };  

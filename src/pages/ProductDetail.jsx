@@ -1,14 +1,19 @@
 import React, { useContext, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { PRODUCTS, CATEGORIES } from '../data/products';
+import { CATEGORIES } from '../data/products';
+import fashionData from "../data/fashion.json";
+import electronicsData from "../data/electronics.json";
+import booksData from "../data/books.json";
 import ResponsiveImage from '../components/ResponsiveImage';
 import { pushDataLayer } from '../utils/datalayer';
+import Toast from '../components/Toast';
 import { CartContext } from '../context/CartContext';
 
 export default function ProductDetail() {
   const { productId } = useParams();
+  const PRODUCTS = [...fashionData, ...electronicsData, ...booksData];
   const product = PRODUCTS.find(p => p.id === productId);
-  const { addToCart } = useContext(CartContext);
+  const { addToCart, toast } = useContext(CartContext);
 
   useEffect(() => {
     if (product) {
@@ -76,6 +81,7 @@ export default function ProductDetail() {
           Add to Cart
         </button>
       </div>
+      <Toast message={toast.message} show={toast.show} color={toast.color} />
     </div>
   );
 }
