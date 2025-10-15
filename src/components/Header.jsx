@@ -21,11 +21,12 @@ export default function Header({ user, setUser }) {
     <header className="bg-white shadow-sm">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <Link to="/" className="text-2xl font-bold">MyShop</Link>
+          <Link to="/" className="text-2xl font-bold">AEP Learning</Link>
         </div>
         <nav className="flex items-center gap-6">
           <Link to="/" className="hover:underline">Home</Link>
           <Link to="/products" className="hover:underline">Products</Link>
+          <Link to="/api-request" className="hover:underline">Custom AEP Request</Link>
           <Link to="/cart" className="relative">
             Cart
             <span className="ml-2 inline-block bg-blue-500 text-white text-xs px-2 py-0.5 rounded">{totalItems}</span>
@@ -42,7 +43,7 @@ export default function Header({ user, setUser }) {
               </button>
             </div>
           ) : (
-            <a href="/login" className="underline">Login</a>
+            <Link to="/login" className="hover:underline">Login</Link>
           )}
         </div>
         </nav>

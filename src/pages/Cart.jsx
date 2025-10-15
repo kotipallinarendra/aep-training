@@ -64,13 +64,13 @@ export default function Cart() {
                 {cart.map((item) => (
                   <div key={item.id} className="cart-item flex items-center gap-4 border-b py-2">
                     <img
-                      src={`${item.image}.jpg`}
+                      src={`${import.meta.env.BASE_URL}${item.image}.jpg`}
                       alt={item.title}
                       className="w-16 h-16 object-cover rounded"
                     />
                     <div className="flex-1">
                       <h4 className="font-semibold">{item.title}</h4>
-                      <p>${item.price}</p>
+                      <p>₹{item.price}</p>
                     </div>
                     <input
                       type="number"
@@ -96,7 +96,7 @@ export default function Cart() {
             }`}
             >
             <span className="font-semibold text-lg">Total:</span>
-            <span className="font-bold text-lg">${totalAmount.toFixed(2)}</span>
+            <span className="font-bold text-lg">₹{totalAmount.toFixed(2)}</span>
           </div>
           </>
         )}

@@ -57,7 +57,7 @@ function OrderConfirmation() {
         {items.map((item) => (
           <li key={item.id} className="flex border-b py-2">
             <img
-              src={`${item.image}.jpg`}
+              src={`${import.meta.env.BASE_URL}${item.image}.jpg`}
               alt={item.title}
               className="w-16 h-16 object-cover rounded"
             />
@@ -66,7 +66,7 @@ function OrderConfirmation() {
         ))}
       </ul>
 
-      <p className="text-lg font-bold">Total: ${total.toFixed(2)}</p>
+      <p className="text-lg font-bold">Total: ₹{total.toFixed(2)}</p>
     </div>
   );
 }

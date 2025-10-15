@@ -15,8 +15,9 @@ export default function ProductCard({ product, onAddToCart }) {
       <Link to={`/product/${product.id}`} className="block">
         <ResponsiveImage srcBase={product.image} alt={product.title} />
         <div className="p-4">
-          <h3 className="font-medium text-lg mb-1">{product.title}</h3>
-          <p className="text-gray-600 mb-2">${product.price}</p>
+          <h3 className="font-medium text-lg mb-1 line-clamp-2 min-h-[56px]">{product.title}</h3>
+          <p className="text-gray-600 mb-2 line-clamp-3 min-h-[72px]">{product.description}</p>
+          <p className="text-gray-600 mb-2">₹{product.price}</p>
         </div>
       </Link>
       <div className="mt-auto flex items-center justify-between">

@@ -1,6 +1,9 @@
 import React, { useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { PRODUCTS, CATEGORIES } from '../data/products';
+import fashionData from "../data/fashion.json";
+import electronicsData from "../data/electronics.json";
+import booksData from "../data/books.json";
 import ProductCard from '../components/ProductCard';
 import { pushDataLayer } from '../utils/datalayer';
 import Toast from '../components/Toast';
@@ -8,6 +11,7 @@ import { CartContext } from '../context/CartContext';
 
 export default function Category() {
   const { categoryId } = useParams();
+  const PRODUCTS = [...fashionData, ...electronicsData, ...booksData];
   const category = CATEGORIES.find(cat => cat.id === categoryId);
   const products = PRODUCTS.filter(p => p.category === categoryId);
   const { toast } = useContext(CartContext);

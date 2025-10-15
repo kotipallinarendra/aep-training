@@ -1,0 +1,273 @@
+[
+    {
+      "id": "books-fiction-01",
+      "title": "The Midnight Library",
+      "price": 499,
+      "image": "/assets/books-fiction-01",
+      "category": "books",
+      "subcategory": "Fiction",
+      "description": "A novel exploring choices, regrets, and the infinite possibilities of life."
+    },
+    {
+      "id": "books-fiction-02",
+      "title": "Where the Crawdads Sing",
+      "price": 599,
+      "image": "/assets/books-fiction-02",
+      "category": "books",
+      "subcategory": "Fiction",
+      "description": "A mystery and coming-of-age story set in the marshlands of North Carolina."
+    },
+    {
+      "id": "books-fiction-03",
+      "title": "The Invisible Life of Addie LaRue",
+      "price": 699,
+      "image": "/assets/books-fiction-03",
+      "category": "books",
+      "subcategory": "Fiction",
+      "description": "A Faustian tale about a girl cursed to be forgotten by everyone she meets."
+    },
+    {
+      "id": "books-fiction-04",
+      "title": "The Song of Achilles",
+      "price": 549,
+      "image": "/assets/books-fiction-04",
+      "category": "books",
+      "subcategory": "Fiction",
+      "description": "A retelling of the Iliad through the eyes of Patroclus, exploring love and war."
+    },
+    {
+      "id": "books-fiction-05",
+      "title": "Dune",
+      "price": 799,
+      "image": "/assets/books-fiction-05",
+      "category": "books",
+      "subcategory": "Fiction",
+      "description": "Epic science fiction novel about politics, religion, and survival on a desert planet."
+    },
+    {
+      "id": "books-fiction-06",
+      "title": "Circe",
+      "price": 599,
+      "image": "/assets/books-fiction-06",
+      "category": "books",
+      "subcategory": "Fiction",
+      "description": "A retelling of the Odyssey from the perspective of the enchantress Circe."
+    },
+    {
+      "id": "books-fiction-07",
+      "title": "Little Fires Everywhere",
+      "price": 499,
+      "image": "/assets/books-fiction-07",
+      "category": "books",
+      "subcategory": "Fiction",
+      "description": "Explores motherhood, identity, and secrets in a suburban community."
+    },
+    {
+      "id": "books-fiction-08",
+      "title": "Normal People",
+      "price": 449,
+      "image": "/assets/books-fiction-08",
+      "category": "books",
+      "subcategory": "Fiction",
+      "description": "A love story between two young people navigating adulthood and social class."
+    },
+    {
+      "id": "books-fiction-09",
+      "title": "The Night Circus",
+      "price": 599,
+      "image": "/assets/books-fiction-09",
+      "category": "books",
+      "subcategory": "Fiction",
+      "description": "A magical competition between two young illusionists set in a mysterious circus."
+    },
+    {
+      "id": "books-fiction-10",
+      "title": "Anxious People",
+      "price": 549,
+      "image": "/assets/books-fiction-10",
+      "category": "books",
+      "subcategory": "Fiction",
+      "description": "A quirky comedy about a failed bank robbery and the lives of those involved."
+    },
+    {
+        "id": "books-nonfiction-01",
+        "title": "Sapiens: A Brief History of Humankind",
+        "price": 699,
+        "image": "/assets/books-nonfiction-01",
+        "category": "books",
+        "subcategory": "Non-Fiction",
+        "description": "Explores the history of humankind from the Stone Age to modern times."
+    },
+    {
+        "id": "books-nonfiction-02",
+        "title": "Educated",
+        "price": 599,
+        "image": "/assets/books-nonfiction-02",
+        "category": "books",
+        "subcategory": "Non-Fiction",
+        "description": "Memoir of a woman who grows up in a strict household and pursues education against all odds."
+    },
+    {
+        "id": "books-nonfiction-03",
+        "title": "Becoming",
+        "price": 649,
+        "image": "/assets/books-nonfiction-03",
+        "category": "books",
+        "subcategory": "Non-Fiction",
+        "description": "Michelle Obama's memoir chronicling her life, career, and time as First Lady."
+    },
+    {
+        "id": "books-nonfiction-04",
+        "title": "Atomic Habits",
+        "price": 499,
+        "image": "/assets/books-nonfiction-04",
+        "category": "books",
+        "subcategory": "Non-Fiction",
+        "description": "Practical guide to building good habits and breaking bad ones."
+    },
+    {
+        "id": "books-nonfiction-05",
+        "title": "The Power of Habit",
+        "price": 549,
+        "image": "/assets/books-nonfiction-05",
+        "category": "books",
+        "subcategory": "Non-Fiction",
+        "description": "Explores the science behind habit formation and how to transform your routines."
+    },
+    {
+        "id": "books-nonfiction-06",
+        "title": "Thinking, Fast and Slow",
+        "price": 799,
+        "image": "/assets/books-nonfiction-06",
+        "category": "books",
+        "subcategory": "Non-Fiction",
+        "description": "Daniel Kahneman’s exploration of human thinking, decision-making, and biases."
+    },
+    {
+        "id": "books-nonfiction-07",
+        "title": "The Subtle Art of Not Giving a F*ck",
+        "price": 449,
+        "image": "/assets/books-nonfiction-07",
+        "category": "books",
+        "subcategory": "Non-Fiction",
+        "description": "Self-help book on focusing on what really matters and letting go of unnecessary worries."
+    },
+    {
+        "id": "books-nonfiction-08",
+        "title": "The 7 Habits of Highly Effective People",
+        "price": 599,
+        "image": "/assets/books-nonfiction-08",
+        "category": "books",
+        "subcategory": "Non-Fiction",
+        "description": "Classic guide to personal and professional effectiveness."
+    },
+    {
+        "id": "books-nonfiction-09",
+        "title": "Grit",
+        "price": 549,
+        "image": "/assets/books-nonfiction-09",
+        "category": "books",
+        "subcategory": "Non-Fiction",
+        "description": "Exploration of the power of passion and perseverance in achieving long-term goals."
+    },
+    {
+        "id": "books-nonfiction-10",
+        "title": "Outliers",
+        "price": 499,
+        "image": "/assets/books-nonfiction-10",
+        "category": "books",
+        "subcategory": "Non-Fiction",
+        "description": "Malcolm Gladwell examines the factors that contribute to high levels of success."
+    },
+    {
+        "id": "books-children-01",
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "price": 399,
+        "image": "/assets/books-children-01",
+        "category": "books",
+        "subcategory": "Children",
+        "description": "The first book in the beloved Harry Potter series by J.K. Rowling."
+    },
+    {
+        "id": "books-children-02",
+        "title": "Charlotte's Web",
+        "price": 349,
+        "image": "/assets/books-children-02",
+        "category": "books",
+        "subcategory": "Children",
+        "description": "Classic story of friendship between a pig titled Wilbur and a spider titled Charlotte."
+    },
+    {
+        "id": "books-children-03",
+        "title": "Matilda",
+        "price": 299,
+        "image": "/assets/books-children-03",
+        "category": "books",
+        "subcategory": "Children",
+        "description": "Roald Dahl’s story of a brilliant young girl with extraordinary abilities."
+    },
+    {
+        "id": "books-children-04",
+        "title": "The Very Hungry Caterpillar",
+        "price": 199,
+        "image": "/assets/books-children-04",
+        "category": "books",
+        "subcategory": "Children",
+        "description": "A beautifully illustrated story about a caterpillar’s transformation into a butterfly."
+    },
+    {
+        "id": "books-children-05",
+        "title": "Where the Wild Things Are",
+        "price": 249,
+        "image": "/assets/books-children-05",
+        "category": "books",
+        "subcategory": "Children",
+        "description": "Classic tale of Max, a boy who journeys to an island of wild creatures."
+    },
+    {
+        "id": "books-children-06",
+        "title": "Goodnight Moon",
+        "price": 199,
+        "image": "/assets/books-children-06",
+        "category": "books",
+        "subcategory": "Children",
+        "description": "A timeless bedtime story with calming rhymes and illustrations."
+    },
+    {
+        "id": "books-children-07",
+        "title": "The Gruffalo",
+        "price": 299,
+        "image": "/assets/books-children-07",
+        "category": "books",
+        "subcategory": "Children",
+        "description": "A clever mouse outsmarts predators in the forest, meeting the fearsome Gruffalo."
+    },
+    {
+        "id": "books-children-08",
+        "title": "Diary of a Wimpy Kid",
+        "price": 349,
+        "image": "/assets/books-children-08",
+        "category": "books",
+        "subcategory": "Children",
+        "description": "Funny illustrated series about middle-schooler Greg Heffley’s adventures."
+    },
+    {
+        "id": "books-children-09",
+        "title": "Percy Jackson and the Olympians: The Lightning Thief",
+        "price": 399,
+        "image": "/assets/books-children-09",
+        "category": "books",
+        "subcategory": "Children",
+        "description": "The first book in the Percy Jackson series, introducing demigod adventures."
+    },
+    {
+        "id": "books-children-10",
+        "title": "Winnie-the-Pooh",
+        "price": 299,
+        "image": "/assets/books-children-10",
+        "category": "books",
+        "subcategory": "Children",
+        "description": "Classic stories of Winnie-the-Pooh and his friends in the Hundred Acre Wood."
+    }
+]
+  

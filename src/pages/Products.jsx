@@ -1,5 +1,8 @@
 import React, { useEffect, useContext } from 'react';
 import { PRODUCTS } from '../data/products';
+import fashionData from "../data/fashion.json";
+import electronicsData from "../data/electronics.json";
+import booksData from "../data/books.json";
 import ProductCard from '../components/ProductCard';
 import { pushDataLayer } from '../utils/datalayer';
 import Toast from '../components/Toast';
@@ -7,6 +10,8 @@ import { CartContext } from '../context/CartContext';
 
 export default function Products() {
   const { toast } = useContext(CartContext);
+  const allProducts = [...fashionData, ...electronicsData, ...booksData];
+
   useEffect(() => {
     pushDataLayer({
       event: 'pageView',
@@ -24,7 +29,7 @@ export default function Products() {
 
       {/* Product grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {PRODUCTS.map(product => (
+        {allProducts.map(product => (
           <ProductCard key={product.id} product={product} />
         ))}
         <Toast message={toast.message} show={toast.show} color={toast.color} />

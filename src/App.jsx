@@ -8,12 +8,10 @@ import Category from './pages/Category';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
-import Payment from './pages/Payment';
 import OrderConfirmation from './pages/OrderConfirmation';
 import LoginPage from './pages/Login';
 import Signup from './pages/Signup';
-import { PRODUCTS } from './data/products';
-import { parse } from 'postcss';
+import APIRequest from './pages/APIRequest';
 import { CartProvider } from "./context/CartContext";
 
 export default function App(){
@@ -40,10 +38,10 @@ export default function App(){
           <Route path='/product/:productId' element={<ProductDetail />} />
           <Route path='/cart' element={<Cart cartItems={cartItems} />} />
           <Route path='/checkout' element={<Checkout cartItems={cartItems} />} />
-          {/* <Route path='/payment' element={<Payment onComplete={()=>{ clearCart(); }} />} /> */}
           <Route path='/order-confirmation/:orderId' element={<OrderConfirmation />} />
           <Route path='/signup' element={<Signup onSignup={(u)=>{ setUser(u); }} />} />
           <Route path='/login' element={<LoginPage setUser={setUser} />} />
+          <Route path='/api-request' element={<APIRequest setUser={setUser} />} />
         </Routes>
         <Footer />
       </Router>

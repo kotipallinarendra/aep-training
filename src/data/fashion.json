@@ -1,0 +1,545 @@
+[
+    {
+      "id": "fashion-men-clothing-01",
+      "title": "Men's Cotton T-Shirt",
+      "price": 499,
+      "image": "/assets/fashion-men-clothing-01",
+      "category": "fashion",
+      "subcategory": "Clothing",
+      "description": "Comfortable cotton t-shirt for everyday wear. Breathable fabric with a classic fit."
+    },
+    {
+      "id": "fashion-men-clothing-02",
+      "title": "Men's Slim Fit Shirt",
+      "price": 899,
+      "image": "/assets/fashion-men-clothing-02",
+      "category": "fashion",
+      "subcategory": "Clothing",
+      "description": "Stylish slim fit shirt made from premium fabric. Perfect for office or casual wear."
+    },
+    {
+      "id": "fashion-men-clothing-03",
+      "title": "Men's Denim Jeans",
+      "price": 1499,
+      "image": "/assets/fashion-men-clothing-03",
+      "category": "fashion",
+      "subcategory": "Clothing",
+      "description": "Classic blue denim jeans with a comfortable straight fit. Durable and versatile."
+    },
+    {
+      "id": "fashion-men-clothing-04",
+      "title": "Men's Casual Shorts",
+      "price": 699,
+      "image": "/assets/fashion-men-clothing-04",
+      "category": "fashion",
+      "subcategory": "Clothing",
+      "description": "Lightweight cotton shorts ideal for casual outings and summer wear."
+    },
+    {
+      "id": "fashion-men-clothing-05",
+      "title": "Men's Polo T-Shirt",
+      "price": 799,
+      "image": "/assets/fashion-men-clothing-05",
+      "category": "fashion",
+      "subcategory": "Clothing",
+      "description": "Smart polo t-shirt with breathable fabric. Ideal for semi-casual occasions."
+    },
+    {
+      "id": "fashion-men-clothing-06",
+      "title": "Men's Hooded Sweatshirt",
+      "price": 1299,
+      "image": "/assets/fashion-men-clothing-06",
+      "category": "fashion",
+      "subcategory": "Clothing",
+      "description": "Warm and cozy hoodie with adjustable drawstring and front pockets."
+    },
+    {
+      "id": "fashion-men-clothing-07",
+      "title": "Men's Formal Trousers",
+      "price": 1699,
+      "image": "/assets/fashion-men-clothing-07",
+      "category": "fashion",
+      "subcategory": "Clothing",
+      "description": "Elegant formal trousers designed for office and business meetings."
+    },
+    {
+      "id": "fashion-men-clothing-08",
+      "title": "Men's Sports Jersey",
+      "price": 999,
+      "image": "/assets/fashion-men-clothing-08",
+      "category": "fashion",
+      "subcategory": "Clothing",
+      "description": "Lightweight and breathable sports jersey designed for active lifestyles."
+    },
+    {
+      "id": "fashion-men-clothing-09",
+      "title": "Men's Checked Shirt",
+      "price": 1099,
+      "image": "/assets/fashion-men-clothing-09",
+      "category": "fashion",
+      "subcategory": "Clothing",
+      "description": "Trendy checked shirt with a modern fit, perfect for casual evenings."
+    },
+    {
+      "id": "fashion-men-clothing-10",
+      "title": "Men's Thermal Innerwear",
+      "price": 599,
+      "image": "/assets/fashion-men-clothing-10",
+      "category": "fashion",
+      "subcategory": "Clothing",
+      "description": "Soft thermal wear that provides warmth and comfort during winters."
+    },
+  
+    {
+      "id": "fashion-men-footwear-01",
+      "title": "Men's Running Shoes",
+      "price": 1999,
+      "image": "/assets/fashion-men-footwear-01",
+      "category": "fashion",
+      "subcategory": "Footwear",
+      "description": "Durable running shoes with cushioned soles for daily workouts."
+    },
+    {
+      "id": "fashion-men-footwear-02",
+      "title": "Men's Leather Sandals",
+      "price": 1299,
+      "image": "/assets/fashion-men-footwear-02",
+      "category": "fashion",
+      "subcategory": "Footwear",
+      "description": "Classic leather sandals with adjustable straps, comfortable for long walks."
+    },
+    {
+      "id": "fashion-men-footwear-03",
+      "title": "Men's Flip Flops",
+      "price": 399,
+      "image": "/assets/fashion-men-footwear-03",
+      "category": "fashion",
+      "subcategory": "Footwear",
+      "description": "Lightweight flip flops ideal for beaches and casual wear."
+    },
+    {
+      "id": "fashion-men-footwear-04",
+      "title": "Men's Formal Shoes",
+      "price": 2499,
+      "image": "/assets/fashion-men-footwear-04",
+      "category": "fashion",
+      "subcategory": "Footwear",
+      "description": "Premium leather formal shoes perfect for business and formal events."
+    },
+    {
+      "id": "fashion-men-footwear-05",
+      "title": "Men's High-top Sneakers",
+      "price": 1899,
+      "image": "/assets/fashion-men-footwear-05",
+      "category": "fashion",
+      "subcategory": "Footwear",
+      "description": "Trendy high-top sneakers for a casual and sporty look."
+    },
+    {
+      "id": "fashion-men-footwear-06",
+      "title": "Men's Sports Sandals",
+      "price": 999,
+      "image": "/assets/fashion-men-footwear-06",
+      "category": "fashion",
+      "subcategory": "Footwear",
+      "description": "Breathable and lightweight sandals with adjustable velcro straps."
+    },
+    {
+      "id": "fashion-men-footwear-07",
+      "title": "Men's Hiking Boots",
+      "price": 2999,
+      "image": "/assets/fashion-men-footwear-07",
+      "category": "fashion",
+      "subcategory": "Footwear",
+      "description": "Sturdy boots designed for trekking and outdoor adventures."
+    },
+    {
+      "id": "fashion-men-footwear-08",
+      "title": "Men's Casual Loafers",
+      "price": 1599,
+      "image": "/assets/fashion-men-footwear-08",
+      "category": "fashion",
+      "subcategory": "Footwear",
+      "description": "Comfortable loafers made with soft suede material."
+    },
+    {
+      "id": "fashion-men-footwear-09",
+      "title": "Men's Slip-On Sneakers",
+      "price": 1399,
+      "image": "/assets/fashion-men-footwear-09",
+      "category": "fashion",
+      "subcategory": "Footwear",
+      "description": "Convenient slip-on sneakers with breathable mesh design."
+    },
+    {
+      "id": "fashion-men-footwear-10",
+      "title": "Men's Office Sandals",
+      "price": 899,
+      "image": "/assets/fashion-men-footwear-10",
+      "category": "fashion",
+      "subcategory": "Footwear",
+      "description": "Simple and comfortable sandals designed for daily office wear."
+    },
+  
+    {
+      "id": "fashion-men-accessories-01",
+      "title": "Men's Leather Wallet",
+      "price": 799,
+      "image": "/assets/fashion-men-accessories-01",
+      "category": "fashion",
+      "subcategory": "Accessories",
+      "description": "Premium leather wallet with multiple card slots and cash compartments."
+    },
+    {
+        "id": "fashion-men-accessories-02",
+        "title": "Men's Leather Belt",
+        "price": 599,
+        "image": "/assets/fashion-men-accessories-02",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Durable leather belt with a stylish buckle. Suitable for both formal and casual outfits."
+      },
+      {
+        "id": "fashion-men-accessories-03",
+        "title": "Men's Sunglasses",
+        "price": 1299,
+        "image": "/assets/fashion-men-accessories-03",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Polarized sunglasses offering UV protection and a modern look."
+      },
+      {
+        "id": "fashion-men-accessories-04",
+        "title": "Men's Analog Watch",
+        "price": 2499,
+        "image": "/assets/fashion-men-accessories-04",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Classic analog wristwatch with a stainless steel strap."
+      },
+      {
+        "id": "fashion-men-accessories-05",
+        "title": "Men's Digital Watch",
+        "price": 1999,
+        "image": "/assets/fashion-men-accessories-05",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Sporty digital watch with multiple features like stopwatch and alarm."
+      },
+      {
+        "id": "fashion-men-accessories-06",
+        "title": "Men's Perfume Spray",
+        "price": 1499,
+        "image": "/assets/fashion-men-accessories-06",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Long-lasting fragrance with a bold masculine scent."
+      },
+      {
+        "id": "fashion-men-accessories-07",
+        "title": "Men's Travel Backpack",
+        "price": 1799,
+        "image": "/assets/fashion-men-accessories-07",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Durable backpack with multiple compartments for daily use."
+      },
+      {
+        "id": "fashion-men-accessories-08",
+        "title": "Men's Cap",
+        "price": 499,
+        "image": "/assets/fashion-men-accessories-08",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Adjustable casual cap with breathable fabric."
+      },
+      {
+        "id": "fashion-men-accessories-09",
+        "title": "Men's Bracelet",
+        "price": 699,
+        "image": "/assets/fashion-men-accessories-09",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Stylish bracelet made from leather and metal accents."
+      },
+      {
+        "id": "fashion-men-accessories-10",
+        "title": "Men's Keychain",
+        "price": 299,
+        "image": "/assets/fashion-men-accessories-10",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Metal keychain with a premium finish, lightweight and durable."
+      },
+      {
+        "id": "fashion-women-clothing-01",
+        "title": "Women's Cotton T-Shirt",
+        "price": 699,
+        "image": "/assets/fashion-women-clothing-01",
+        "category": "fashion",
+        "subcategory": "Clothing",
+        "description": "Comfortable cotton t-shirt with round neck and short sleeves."
+      },
+      {
+        "id": "fashion-women-clothing-02",
+        "title": "Women's Formal Shirt",
+        "price": 999,
+        "image": "/assets/fashion-women-clothing-02",
+        "category": "fashion",
+        "subcategory": "Clothing",
+        "description": "Smart formal shirt with button-down design for office wear."
+      },
+      {
+        "id": "fashion-women-clothing-03",
+        "title": "Women's Blue Denim Jeans",
+        "price": 1499,
+        "image": "/assets/fashion-women-clothing-03",
+        "category": "fashion",
+        "subcategory": "Clothing",
+        "description": "Classic straight-fit denim jeans with high waist and soft stretch."
+      },
+      {
+        "id": "fashion-women-clothing-04",
+        "title": "Women's Casual Shorts",
+        "price": 799,
+        "image": "/assets/fashion-women-clothing-04",
+        "category": "fashion",
+        "subcategory": "Clothing",
+        "description": "Lightweight cotton shorts perfect for summer outings."
+      },
+      {
+        "id": "fashion-women-clothing-05",
+        "title": "Women's Maxi Dress",
+        "price": 1899,
+        "image": "/assets/fashion-women-clothing-05",
+        "category": "fashion",
+        "subcategory": "Clothing",
+        "description": "Elegant maxi dress with floral prints, ideal for parties and gatherings."
+      },
+      {
+        "id": "fashion-women-clothing-06",
+        "title": "Women's Hoodie Sweatshirt",
+        "price": 1599,
+        "image": "/assets/fashion-women-clothing-06",
+        "category": "fashion",
+        "subcategory": "Clothing",
+        "description": "Cozy hoodie sweatshirt with kangaroo pockets and drawstring hood."
+      },
+      {
+        "id": "fashion-women-clothing-07",
+        "title": "Women's Kurti",
+        "price": 1199,
+        "image": "/assets/fashion-women-clothing-07",
+        "category": "fashion",
+        "subcategory": "Clothing",
+        "description": "Stylish ethnic kurti with embroidery and breathable fabric."
+      },
+      {
+        "id": "fashion-women-clothing-08",
+        "title": "Women's Leggings",
+        "price": 599,
+        "image": "/assets/fashion-women-clothing-08",
+        "category": "fashion",
+        "subcategory": "Clothing",
+        "description": "Soft stretchable leggings perfect for casual and fitness wear."
+      },
+      {
+        "id": "fashion-women-clothing-09",
+        "title": "Women's Jacket",
+        "price": 2499,
+        "image": "/assets/fashion-women-clothing-09",
+        "category": "fashion",
+        "subcategory": "Clothing",
+        "description": "Trendy winter jacket with zipper closure and side pockets."
+      },
+      {
+        "id": "fashion-women-clothing-10",
+        "title": "Women's Tank Top",
+        "price": 499,
+        "image": "/assets/fashion-women-clothing-10",
+        "category": "fashion",
+        "subcategory": "Clothing",
+        "description": "Sleeveless tank top made of breathable cotton fabric."
+      },
+      {
+        "id": "fashion-women-footwear-01",
+        "title": "Women's Casual Sneakers",
+        "price": 1799,
+        "image": "/assets/fashion-women-footwear-01",
+        "category": "fashion",
+        "subcategory": "Footwear",
+        "description": "Trendy lace-up sneakers designed for all-day comfort."
+      },
+      {
+        "id": "fashion-women-footwear-02",
+        "title": "Women's High Heels",
+        "price": 2299,
+        "image": "/assets/fashion-women-footwear-02",
+        "category": "fashion",
+        "subcategory": "Footwear",
+        "description": "Elegant stiletto high heels perfect for parties and events."
+      },
+      {
+        "id": "fashion-women-footwear-03",
+        "title": "Women's Flat Sandals",
+        "price": 899,
+        "image": "/assets/fashion-women-footwear-03",
+        "category": "fashion",
+        "subcategory": "Footwear",
+        "description": "Lightweight and stylish flat sandals for daily wear."
+      },
+      {
+        "id": "fashion-women-footwear-04",
+        "title": "Women's Sports Shoes",
+        "price": 2499,
+        "image": "/assets/fashion-women-footwear-04",
+        "category": "fashion",
+        "subcategory": "Footwear",
+        "description": "Breathable and durable running shoes with cushioned sole."
+      },
+      {
+        "id": "fashion-women-footwear-05",
+        "title": "Women's Ballet Flats",
+        "price": 1299,
+        "image": "/assets/fashion-women-footwear-05",
+        "category": "fashion",
+        "subcategory": "Footwear",
+        "description": "Comfortable slip-on ballet flats for casual outings."
+      },
+      {
+        "id": "fashion-women-footwear-06",
+        "title": "Women's Wedge Sandals",
+        "price": 1599,
+        "image": "/assets/fashion-women-footwear-06",
+        "category": "fashion",
+        "subcategory": "Footwear",
+        "description": "Stylish wedge sandals with ankle strap for extra support."
+      },
+      {
+        "id": "fashion-women-footwear-07",
+        "title": "Women's Loafers",
+        "price": 1999,
+        "image": "/assets/fashion-women-footwear-07",
+        "category": "fashion",
+        "subcategory": "Footwear",
+        "description": "Elegant loafers with soft cushioning for work and travel."
+      },
+      {
+        "id": "fashion-women-footwear-08",
+        "title": "Women's Ankle Boots",
+        "price": 2699,
+        "image": "/assets/fashion-women-footwear-08",
+        "category": "fashion",
+        "subcategory": "Footwear",
+        "description": "Trendy ankle boots with block heels for winter fashion."
+      },
+      {
+        "id": "fashion-women-footwear-09",
+        "title": "Women's Slippers",
+        "price": 599,
+        "image": "/assets/fashion-women-footwear-09",
+        "category": "fashion",
+        "subcategory": "Footwear",
+        "description": "Soft indoor slippers with anti-slip sole for home comfort."
+      },
+      {
+        "id": "fashion-women-footwear-10",
+        "title": "Women's Kolhapuri Chappals",
+        "price": 1399,
+        "image": "/assets/fashion-women-footwear-10",
+        "category": "fashion",
+        "subcategory": "Footwear",
+        "description": "Handcrafted leather Kolhapuri sandals with traditional design."
+      },
+      {
+        "id": "fashion-women-accessories-01",
+        "title": "Women's Leather Handbag",
+        "price": 2499,
+        "image": "/assets/fashion-women-accessories-01",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Spacious leather handbag with multiple compartments."
+      },
+      {
+        "id": "fashion-women-accessories-02",
+        "title": "Women's Analog Watch",
+        "price": 1999,
+        "image": "/assets/fashion-women-accessories-02",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Elegant analog wristwatch with a stainless steel strap."
+      },
+      {
+        "id": "fashion-women-accessories-03",
+        "title": "Women's Sunglasses",
+        "price": 1199,
+        "image": "/assets/fashion-women-accessories-03",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "UV-protected oversized sunglasses for a chic look."
+      },
+      {
+        "id": "fashion-women-accessories-04",
+        "title": "Women's Leather Wallet",
+        "price": 899,
+        "image": "/assets/fashion-women-accessories-04",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Compact leather wallet with multiple card slots."
+      },
+      {
+        "id": "fashion-women-accessories-05",
+        "title": "Women's Perfume",
+        "price": 1599,
+        "image": "/assets/fashion-women-accessories-05",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Refreshing floral fragrance with long-lasting effect."
+      },
+      {
+        "id": "fashion-women-accessories-06",
+        "title": "Women's Scarf",
+        "price": 499,
+        "image": "/assets/fashion-women-accessories-06",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Soft cotton scarf with elegant printed design."
+      },
+      {
+        "id": "fashion-women-accessories-07",
+        "title": "Women's Earrings Set",
+        "price": 799,
+        "image": "/assets/fashion-women-accessories-07",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Trendy earrings set with multiple styles for daily wear."
+      },
+      {
+        "id": "fashion-women-accessories-08",
+        "title": "Women's Bracelet",
+        "price": 699,
+        "image": "/assets/fashion-women-accessories-08",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Delicate chain bracelet with adjustable size."
+      },
+      {
+        "id": "fashion-women-accessories-09",
+        "title": "Women's Tote Bag",
+        "price": 1699,
+        "image": "/assets/fashion-women-accessories-09",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Spacious tote bag made with eco-friendly canvas material."
+      },
+      {
+        "id": "fashion-women-accessories-10",
+        "title": "Women's Smartwatch",
+        "price": 3499,
+        "image": "/assets/fashion-women-accessories-10",
+        "category": "fashion",
+        "subcategory": "Accessories",
+        "description": "Stylish smartwatch with fitness tracking and notifications."
+      }            
+  ]
+  

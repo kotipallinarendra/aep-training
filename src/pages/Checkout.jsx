@@ -78,7 +78,7 @@ export default function Checkout() {
               <li key={item.id} className="flex justify-between border-b pb-2">
                 <div className="flex">
                   <img
-                    src={`${item.image}.jpg`}
+                    src={`${import.meta.env.BASE_URL}${item.image}.jpg`}
                     alt={item.title}
                     className="w-16 h-16 object-cover rounded"
                   />
@@ -88,11 +88,11 @@ export default function Checkout() {
                   </div>
                   
                 </div>
-                <span>${(item.price * item.quantity).toFixed(2)}</span>
+                <span>₹{(item.price * item.quantity).toFixed(2)}</span>
               </li>
             ))}
           </ul>
-          <p className="mt-4 font-bold text-end">Total: ${total.toFixed(2)}</p>
+          <p className="mt-4 font-bold text-end">Total: ₹{total.toFixed(2)}</p>
         </div>
 
         {/* Delivery & Payment form */}
