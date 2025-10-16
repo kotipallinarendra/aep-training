@@ -6,7 +6,6 @@ import { pushDataLayer } from '../utils/datalayer';
 export default function Header({ user, setUser }) {
   const { cart } = useContext(CartContext);
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
-  console.log('user Header ',user)
   const handleLogout = () => {
     sessionStorage.removeItem("user");
     setUser(null);

@@ -1,6 +1,7 @@
 import { useLocation, useParams, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import {pushDataLayer} from '../utils/datalayer'
+import Cart from './Cart';
 
 function OrderConfirmation() {
   const { orderId } = useParams();
@@ -25,16 +26,14 @@ function OrderConfirmation() {
       event: 'orderConfirmation',
       page: { name: 'Order Confirmation', path: '/order-confirmation' },
       order: {
-        id: orderId,
-        products: items.map(item => ({
-          id: item.id,
-          title: item.title,
-          price: item.price,
-          quantity: item.quantity
-        })),
-        totalAmount: total,
-        deliveryAddress: address
-      }
+        purchaseOrderNumber: orderId,
+        purchaseID: orderId,
+        priceTotal: total,
+        currencyCode: 'INR',
+        orderType: 'checkout'
+      },
+      cart: items,
+      deliveryAddress: address
     });
   }, []);
 

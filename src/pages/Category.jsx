@@ -4,6 +4,7 @@ import { PRODUCTS, CATEGORIES } from '../data/products';
 import fashionData from "../data/fashion.json";
 import electronicsData from "../data/electronics.json";
 import booksData from "../data/books.json";
+import HeroBanner from "../components/HeroBanner";
 import ProductCard from '../components/ProductCard';
 import { pushDataLayer } from '../utils/datalayer';
 import Toast from '../components/Toast';
@@ -19,7 +20,7 @@ export default function Category() {
   useEffect(() => {
       pushDataLayer({
         event: 'pageView',
-        page: { name: 'Category', path: `/category/${categoryId}` },
+        page: { name: category.title, path: `/category/${categoryId}` },
         category: category ? { id: category.id, title: category.title } : {}
       });
   }, [categoryId]);
@@ -32,14 +33,17 @@ export default function Category() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* Hero */}
-      <section className="bg-yellow-50 py-12 text-center mb-8 rounded-lg">
-        <h1 className="text-3xl font-bold mb-2">{category.title}</h1>
-        <p className="text-gray-700">Explore the best products in {category.title}.</p>
-      </section>
+      {/* Hero section */}
+      <HeroBanner
+        title={category.title}
+        description={`Explore the best deals in ${category.title}. Your one-stop shop for everything you love!`}
+        ctaText="Explore Products"
+        ctaLink="/products"
+        background={`${import.meta.env.BASE_URL}${products[0].image}.jpg`}
+      />
 
       {/* Product grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-16">
         {products.map(product => (
           <ProductCard key={product.id} product={product} />
         ))}

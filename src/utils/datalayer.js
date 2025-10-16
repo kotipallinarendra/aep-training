@@ -8,7 +8,7 @@ export const pushDataLayer = (payload) => {
     // Merge user data into event
     const dataWithUser = {
         ...payload,
-        user: parsedUser || undefined,
+        user: parsedUser || {"logInStatus" : "false"},
     };
     
     window.adobeDataLayer.push(dataWithUser);

@@ -11,7 +11,7 @@ export default function Checkout() {
   });
 
 
-  const { clearCart } = useContext(CartContext);
+  const { cartId, clearCart } = useContext(CartContext);
 
   const [form, setForm] = useState({
     name: '',
@@ -25,12 +25,27 @@ export default function Checkout() {
 
   useEffect(() => {
       pushDataLayer({
-        event: 'pageView',
+        event: 'checkout',
         page: { name: 'Checkout', path: '/checkout' },
+        cartId,
         cart: cart.map(item => ({
-          id: item.id,
-          title: item.title,
-          price: item.price,
+          SKU: item.id,
+          name: item.title,
+          productImageUrl: item.image,
+          productCategories: [
+            {
+              'categoryID': item.category,
+              'categoryName': item.category,
+              'categoryPath': `/category/${item.category}`
+            },
+            {
+              'categoryID': item.subcategory,
+              'categoryName': item.subcategory,
+              'categoryPath': `/category/${item.category}`
+            }
+          ],
+          priceTotal: item.price,
+          currencyCode: 'INR',
           quantity: item.quantity
         }))
       });

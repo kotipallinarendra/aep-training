@@ -21,6 +21,7 @@ function LoginPage({ setUser }) {
     const userData = {
       email,
       name: "Demo User",
+      logInStatus: "true"
     };
 
     // Save user to sessionStorage

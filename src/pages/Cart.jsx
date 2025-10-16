@@ -1,11 +1,11 @@
 import React, { useContext, useRef, useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { pushDataLayer } from '../utils/datalayer';
 import Toast from '../components/Toast';
 import { CartContext } from '../context/CartContext';
 
 export default function Cart() {
-  const { cart, removeFromCart, updateQuantity, toast } = useContext(CartContext);
+  const { cart, cartId, removeFromCart, updateQuantity, clearCart, toast } = useContext(CartContext);
   const containerRef = useRef(null);
   const [isOverflowing, setIsOverflowing] = useState(false);
   const navigate = useNavigate();
@@ -14,10 +14,25 @@ export default function Cart() {
     localStorage.setItem('cart', JSON.stringify(cart));
     pushDataLayer({
       event: 'cartView',
+      cartId,
       cart: cart.map(item => ({
-        id: item.id,
-        title: item.title,
-        price: item.price,
+        SKU: item.id,
+        name: item.title,
+        productImageUrl: item.image,
+        productCategories: [
+          {
+            'categoryID': item.category,
+            'categoryName': item.category,
+            'categoryPath': `/category/${item.category}`
+          },
+          {
+            'categoryID': item.subcategory,
+            'categoryName': item.subcategory,
+            'categoryPath': `/category/${item.category}`
+          }
+        ],
+        priceTotal: item.price,
+        currencyCode: 'INR',
         quantity: item.quantity
       }))
     });
@@ -50,6 +65,12 @@ export default function Cart() {
             {/* Checkout button */}
             <div className="flex justify-end mb-4">
               <button
+                onClick={() => clearCart()}
+                className="px-5 py-2 mr-2 bg-red-600 text-white rounded-lg shadow hover:bg-red-700 transition"
+              >
+                Clear Cart
+              </button>
+              <button
                 onClick={() => navigate('/checkout')}
                 className="px-5 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"
               >
@@ -69,18 +90,21 @@ export default function Cart() {
                       className="w-16 h-16 object-cover rounded"
                     />
                     <div className="flex-1">
-                      <h4 className="font-semibold">{item.title}</h4>
+                      <Link to={`/product/${item.id}`} className="inline-block">
+                        <h4 className="font-semibold">{item.title}</h4>
+                      </Link>
+                      
                       <p>₹{item.price}</p>
                     </div>
                     <input
                       type="number"
                       min={1}
                       value={item.quantity}
-                      onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
+                      onChange={(e) => updateQuantity(item, parseInt(e.target.value))}
                       className="w-16 p-1 border rounded text-center"
                     />
                     <button
-                      onClick={() => removeFromCart(item.id)}
+                      onClick={() => removeFromCart(item)}
                       className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600"
                     >
                       Remove

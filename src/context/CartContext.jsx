@@ -15,6 +15,22 @@ export const CartProvider = ({ children }) => {
     }
   });
 
+   // --- Initialize or Create Cart ID ---
+  const [cartId, setCartId] = useState(() => {
+    try {
+      const storedId = localStorage.getItem('cartId');
+      if (storedId) return storedId;
+
+      // Generate new 15-char unique ID
+      const newId = Math.random().toString(36).substring(2, 17).toUpperCase();
+      localStorage.setItem('cartId', newId);
+      return newId;
+    } catch (error) {
+      console.error("Failed to initialize cart ID:", error);
+      return null;
+    }
+  });
+
   // Toast state
   const [toast, setToast] = useState({ message: '', show: false, color:'green'});
 
@@ -33,23 +49,24 @@ export const CartProvider = ({ children }) => {
   }, [cart]);
 
   // Add product to cart
-  const addToCart = (product) => {
+  const addToCart = (product, quantity = 1) => {
     setCart((prev) => {
       const existing = prev.find((p) => p.id === product.id);
       let newCart;
       if (existing) {
         newCart = prev.map((p) =>
-          p.id === product.id ? { ...p, quantity: p.quantity + 1 } : p
+          p.id === product.id ? { ...p, quantity: p.quantity + quantity } : p
         );
       } else {
-        newCart = [...prev, { ...product, quantity: 1 }];
+        newCart = [...prev, { ...product, quantity: quantity}];
       }
 
       // Push dataLayer event
       pushDataLayer({
         event: 'addToCart',
+        cartId,
         cart: newCart,
-        product: product
+        product: {...product, quantity: quantity}
       });
 
       triggerToast('Added to cart successfully!', true, 'green');
@@ -58,10 +75,10 @@ export const CartProvider = ({ children }) => {
   };
 
   // Remove product from cart
-  const removeFromCart = (productId) => {
+  const removeFromCart = (product) => {
     setCart((prev) => {
-      const newCart = prev.filter((p) => p.id !== productId);
-      pushDataLayer({ event: 'removeFromCart', cart: newCart, product: productId });
+      const newCart = prev.filter((p) => p.id !== product.id);
+      pushDataLayer({ event: 'removeFromCart', cartId, cart: newCart, product: product });
 
       triggerToast('Removed from cart successfully!', true, 'red');
       return newCart;
@@ -69,15 +86,15 @@ export const CartProvider = ({ children }) => {
   };
 
   // Update quantity
-  const updateQuantity = (productId, qty) => {
-    if (quantity <= 0) {
-      removeFromCart(productId);
+  const updateQuantity = (product, qty) => {
+    if (qty <= 0) {
+      removeFromCart(product);
     } else {
       setCart((prev) => {
         const newCart = prev.map((p) =>
-          p.id === productId ? { ...p, quantity: qty } : p
+          p.id === product.id ? { ...p, quantity: qty } : p
         );
-        pushDataLayer({ event: 'cartUpdate', cart: newCart});
+        pushDataLayer({ event: 'cartUpdate', cartId, cart: newCart, product: product});
 
         triggerToast('Updated the Product Quantity to cart successfully!', true, 'green');
         return newCart;
@@ -88,10 +105,18 @@ export const CartProvider = ({ children }) => {
   const clearCart = () => {
     setCart([]);
     localStorage.removeItem('cart');
+    localStorage.removeItem('cartId');
+
+    pushDataLayer({ event: 'cartCleared', cartId });
+
+    // Generate new ID for next session
+    const newId = Math.random().toString(36).substring(2, 17).toUpperCase();
+    setCartId(newId);
+    localStorage.setItem('cartId', newId);
   };
 
   return (
-    <CartContext.Provider value={{ cart, setCart, addToCart, removeFromCart, updateQuantity, clearCart, toast }}>
+    <CartContext.Provider value={{ cart, cartId, setCart, addToCart, removeFromCart, updateQuantity, clearCart, toast }}>
       {children}
     </CartContext.Provider>
   );

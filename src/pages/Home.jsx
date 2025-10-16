@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { CATEGORIES } from '../data/products';
 import ResponsiveImage from '../components/ResponsiveImage';
+import HeroBanner from "../components/HeroBanner";
 import { pushDataLayer } from '../utils/datalayer';
 
 export default function Home() {
@@ -12,10 +13,13 @@ export default function Home() {
   return (
     <div>
       {/* Hero section */}
-      <section className="bg-blue-50 py-12 text-center">
-        <h1 className="text-4xl font-bold mb-2">Welcome to AEP Learning</h1>
-        <p className="text-gray-700">Explore categories and find your perfect product.</p>
-      </section>
+      <HeroBanner
+        title="Welcome to AEP Tutorial"
+        description="Explore the best deals in Fashion, Electronics, and Books. Your one-stop shop for everything you love!"
+        ctaText="Explore Products"
+        ctaLink="/products"
+        background={`${import.meta.env.BASE_URL}/assets/books-nonfiction-09.jpg`}
+      />
 
       {/* Category grid */}
       <section className="container mx-auto px-4 py-8">
