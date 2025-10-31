@@ -31,7 +31,7 @@ export default function ProductDetail() {
     if (product) {
       pushDataLayer({
         event: 'productView',
-        page: { name: 'ProductDetail', path: `/product/${productId}` },
+        page: { name: product.title, path: `/product/${productId}` },
         product: {
           id: product.id,
           title: product.title,

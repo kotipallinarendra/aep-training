@@ -65,8 +65,27 @@ export const CartProvider = ({ children }) => {
       pushDataLayer({
         event: 'addToCart',
         cartId,
-        cart: newCart,
-        product: {...product, quantity: quantity}
+        product: {...product, quantity: quantity},
+        cart: newCart.map(item => ({
+          SKU: item.id,
+          name: item.title,
+          productImageUrl: item.image,
+          productCategories: [
+            {
+              'categoryID': item.category,
+              'categoryName': item.category,
+              'categoryPath': `/category/${item.category}`
+            },
+            {
+              'categoryID': item.subcategory,
+              'categoryName': item.subcategory,
+              'categoryPath': `/category/${item.category}`
+            }
+          ],
+          priceTotal: item.price,
+          currencyCode: 'INR',
+          quantity: item.quantity
+        }))
       });
 
       triggerToast('Added to cart successfully!', true, 'green');
@@ -78,7 +97,31 @@ export const CartProvider = ({ children }) => {
   const removeFromCart = (product) => {
     setCart((prev) => {
       const newCart = prev.filter((p) => p.id !== product.id);
-      pushDataLayer({ event: 'removeFromCart', cartId, cart: newCart, product: product });
+      pushDataLayer({ 
+        event: 'removeFromCart',
+        cartId,
+        product: product,
+        cart: newCart.map(item => ({
+          SKU: item.id,
+          name: item.title,
+          productImageUrl: item.image,
+          productCategories: [
+            {
+              'categoryID': item.category,
+              'categoryName': item.category,
+              'categoryPath': `/category/${item.category}`
+            },
+            {
+              'categoryID': item.subcategory,
+              'categoryName': item.subcategory,
+              'categoryPath': `/category/${item.category}`
+            }
+          ],
+          priceTotal: item.price,
+          currencyCode: 'INR',
+          quantity: item.quantity
+        }))
+      });
 
       triggerToast('Removed from cart successfully!', true, 'red');
       return newCart;
@@ -94,7 +137,31 @@ export const CartProvider = ({ children }) => {
         const newCart = prev.map((p) =>
           p.id === product.id ? { ...p, quantity: qty } : p
         );
-        pushDataLayer({ event: 'cartUpdate', cartId, cart: newCart, product: product});
+        pushDataLayer({ 
+          event: 'cartUpdate', 
+          cartId,
+          product: product,
+          cart: newCart.map(item => ({
+            SKU: item.id,
+            name: item.title,
+            productImageUrl: item.image,
+            productCategories: [
+              {
+                'categoryID': item.category,
+                'categoryName': item.category,
+                'categoryPath': `/category/${item.category}`
+              },
+              {
+                'categoryID': item.subcategory,
+                'categoryName': item.subcategory,
+                'categoryPath': `/category/${item.category}`
+              }
+            ],
+            priceTotal: item.price,
+            currencyCode: 'INR',
+            quantity: item.quantity
+          }))
+        });
 
         triggerToast('Updated the Product Quantity to cart successfully!', true, 'green');
         return newCart;
